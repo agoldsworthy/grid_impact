@@ -1,0 +1,101 @@
+@import "global";
+
+.stat-row {
+	border-top: 1px solid #333;
+	margin-top: 35px;
+	padding-top: 15px;
+
+	&:after {
+		display:block;
+		content: "";
+		clear: both;
+	}
+
+	&__intro {
+		margin-bottom: 25px;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+
+	&__teaser {
+		font-size: 22px;
+		line-height: 1.4;
+	}
+
+	&__item__inner {
+		width: 260px;
+		height: 260px;
+		padding: 10px;
+		margin: 0 auto 30px;
+		border-radius: 100%;
+		text-align: center;
+
+		@media(min-width:768px) {
+			margin: 0 auto;
+			width: 235px;
+			height: 235px;
+		}
+
+		@media(min-width:992px) {
+			width: 260px;
+			height: 260px;
+		}	
+
+		&.item-yellow {
+			background: #fff3bf;
+		}		
+
+		&.item-green {
+			background: #c7e5d9;
+		}
+
+		&.item-blue {
+			background: #dee7ef;
+		}					
+
+		img {
+			display: block;
+			margin: 5px auto 10px;
+		}
+	}
+
+	h4 {
+		font-size: 15px;
+		margin: 6px 0 15px;
+		text-transform: uppercase;
+
+		@media(min-width:768px) {
+			font-size: 12px;
+		}
+
+		@media(min-width:992px) {
+			font-size: 16px;
+		}		
+	}
+
+	&__content {
+		padding: 0 13px;
+		font-size: 16px;
+
+		@media(min-width:768px) {
+			font-size: 14px;
+		}
+
+		@media(min-width:992px) {
+			font-size: 16px;
+		}			
+	}
+
+	&__number {
+		font-size: 50px;
+		font-weight: bold;
+		color: $d_green;
+	}
+}
+
+.front .pane-new-home-panel-pane-2 .pane-title {
+	font-size: 30px;
+	width: 100%;
+}
