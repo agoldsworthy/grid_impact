@@ -20,11 +20,11 @@
 	&__content {
 
 		@media(min-width:768px) {
-			width: calc(100% - 285px);
+			width: calc(100% - 320px);
 		}
 
 		@media(min-width:992px) {
-			width: calc(100% - 270px);
+			width: calc(100% - 300px);
 		}
 
 		&__text {
@@ -51,13 +51,13 @@
 		text-align: center;
 		margin: 0 auto 20px;
 		border-radius: 100%;
-		max-width: 240px;
-		max-height: 240px;
+		max-width: 300px;
 		position:relative;
 
 		@media(min-width:768px) {
 			margin: 0;
-			width: 40%;
+			width: 45%;
+			max-width: 320px;
 			float: right;
 		}
 
