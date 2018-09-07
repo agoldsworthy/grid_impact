@@ -9,15 +9,25 @@
 
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="static/css/impact.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="static/js/jquery.fitvids.js"/</script>
+  	<script>
+  	(function($) 
+  	{
+	  	$(document).ready(function(){
+		    // Target your .container, .wrapper, .post, etc.
+		    $(".home-impact__media").fitVids();
+	  	});
+  	})(jQuery);
+  	
+</script>
 </head>
 
 <body>
 
 <div class="home-impact">
 	<div class="home-impact__media">
-		<a href="#" title="see more of our impact"><img src="static/images/home_vid.png" alt="see more of our impact"/><span class="play-icon">
-  <i class="fas fa-play"></i>
-</span></a>
+		<iframe src="https://www.youtube.com/embed/bjt7ICudF_4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	</div>	
 
 	<div class="home-impact__content">
